@@ -94,31 +94,30 @@ main{
 #impresionTarjetas{
   display:flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-left: 6rem;
 
-align-items: center;
-margin-bottom: 2rem;
-padding-left: 2rem;
 
 }
+
 .preview_eventos{
- 
   border-radius: 0.5rem;
   
-  border: black;
+  margin-bottom: 2rem;
 }
 
 
-.eventos{
-  width:100%;
-}
+
 
 .img_tarjeta{
   width: 100% ;
   height:15rem;
   border-radius:0.5rem;
-  margin-top: 0.5rem;
+  
+  object-fit: cover;
+  
 }
 #input{
   display: flex;
@@ -175,10 +174,14 @@ input{
  display: flex;
  justify-content:center;
  align-items: center;
- margin-bottom: 3rem;
+ margin-bottom: 5rem;
 }
 .img_tarjeta{
   height: 20rem;
+  
+  justify-content:center;
+ align-items: center;
+
 }
 .flex{
   width: 60%;
@@ -193,10 +196,11 @@ input{
   
 }
 
+.registro{
+  padding-right: 4rem;
+}
 #selectOption{
- border-radius: 0.5rem;
- height: 2rem;
-
+  border-radius: 0.6rem;
 }
 
 

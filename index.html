@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Amazing Events</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,11 +32,12 @@
             <li class="nav-item">
               <a class="nav-link" href="summary.html">Admin</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item registro">
               <a class="nav-link" href="registro.html">Registro</a>
             </li>
-            <select name="select" id="selectOption">
-              <option value="primera">Selecciona una categoria</option>
+            <select class="form-select" name="select" id="selectOption" aria-label="Default select example">
+              
+              <option selected value="primera">Selecciona una categoria</option>
               <option value="Feria de Comida">Feria de comida</option>
               <option value="Salida al museo">Salida al museo</option>
               <option value="Fiesta de Disfraces">Fiesta de Disfraces</option>
@@ -44,11 +45,13 @@
               <option value="Carrera">Carrera</option>
               <option value="Intercambio de Libros">Intercambio de Libros</option>
               <option value="Vamos al Cine">Vamos al cine</option>
-              
+             
             </select>
+           
           </ul>
+          
           <form class="form-inline my-2 my-lg-0">
-            <input id="searchInput" placeholder="Ingrese una categoria"  class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <input id="searchInput" placeholder="Ingrese una evento"  class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>

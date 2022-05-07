@@ -35,17 +35,10 @@ var data=[]
  
  function search(event){ //Se va a ocupar de buscar y filtrar los datos del array de paises que se encuntra en el archivo datos.js
  let val=event.target.value;
-   if(seleccionDeTarjeta !=="primera"){
-       data=eventosAmazing.filter(cartasAe=>cartasAe.name.toLowerCase().includes(val.toLowerCase())&&cartasAe.name===seleccionDeTarjeta)
-
-   }else if(seleccionDeTarjeta== "primera" && ingresoDelUsuario==""){
-
-    data= eventosAmazing
-
-   }else{
-       data=eventosAmazing.filter(cartasAe=>cartasAe.name.toLowerCase().includes(val.toLowerCase()))
-   }
-   console.log(event)    
+   
+data=eventosAmazing.filter(cartasAe=>cartasAe.name.toLowerCase().includes(val.toLowerCase()))
+   
+console.log(event)    
 console.log(data)    
 muestraDeTarjetas(data)//IMPRESION DE TARJETAS EN EL INICIO
 }
@@ -75,7 +68,7 @@ arrayTarjetas.map(cadaTarjeta=>{
     impresionHtml.innerHTML +=
     
     `
-    <div class="card preview_eventos border-primary" style="width: 30rem;">
+    <div class="card preview_eventos " style="width: 25rem;">
     <article class="eventos"  >
     <img class="card-img-top img_tarjeta" src="${cadaTarjeta.image}" alt="${cadaTarjeta.name}">
     <div class="card-body">
@@ -136,4 +129,4 @@ cartasAe.category===eventoSeleccionado))
  }
    muestraDeTarjetas(data)
 }
-lugar.addEventListener("change",select)
+lugar.addEventListener("change",select) 
